@@ -10,7 +10,7 @@ bool result = true;
 for (int i = 0; i < 4; i++)
 {
     Console.Write($"X:{x[i]}; Y:{y[i]} - ");
-    if (!(x[i] || y[i]) == !x[i] && !y[i])
+    if (!(x[i] || y[i]) == (!x[i] && !y[i]))
         Console.WriteLine("верно.");
     else
     {
